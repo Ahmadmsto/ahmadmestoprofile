@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;300;700&family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+   font-family: Noto Kufi Arabic;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+ 
+  
+  ul {
+    list-style: none;
+ 
+  }
+  
+  /* Header Start */
+header  {
+  height: 100vh;
+  background-color:rgb(255, 255, 255); 
+
+}
+ .navbar {
+  border-radius: 100px 20px;
+  background-color:#000000;
+  margin-right: 22%;
+  border-bottom: 6px solid #ff0000; 
+  position: static;
+  z-index: 9999;
+  width:55%;
+  padding: 40px;
+
+}
+#home #logo{
+  font-weight: 600;
+  font-size: 24px;
+}
+ .navbar nav{
+  display: flex;
+  margin:auto;
+  justify-content:space-between;
+  align-items:center;
+  max-width: 1100px;
+
+}
+
+
+ .navbar nav ul{
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-start;
+  border: solid  rgb(0, 255, 34) 7px;
+
+
+}
+
+
+ .navbar nav ul a{
+  margin:0 15px;
+  font-weight: 600;
+  font-size: 25px;
+
+}
+
+.navbar nav ul a:hover{
+  color: rgb(66, 252, 66);
+}
+
+.header-content{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1100px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+
+  padding: 5rem 2rem;
+}
+.header-content img{
+  margin-right: 10%;
+  padding: 0px;
+  border: red solid 1px;
+  border-radius: 10%;
+  max-width: 450px;
+
+}
+.header-text p{
+  color: red;
+  
+  font-size: 27px;
+  font-weight: 900;
+  text-align: left;
+}
+.header-text h1{
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+
+}
+/*menu*/
+
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.btn-menu :hover {
+  background: #bce4d1;
+}
+
+
+
+.primary-text {
+  color: #e96711;
+}
+#menu {
+  background: rgb(255, 255, 255);
+  padding: 5rem 2rem;
+}
+
+#menu .title h2 {
+  color: #161618;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#menu .title p {
+  color: #240e0e;
+  font-weight: 500;
+  font-size: 24px;
+}
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#menu .menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .menu-items .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#menu .menu-items .menu-item img {
+  border: red solid 4px;  
+  margin-left: 40px;
+
+}
+
+#menu .menu-items .menu-item h3 {
+  color: #383848;
+  border-bottom: 1px dashed #b63636;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#menu .menu-items .menu-item span {
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+
+#menu .menu-items .menu-item p {
+  margin-top: 10px;
+}
+
+ .btn-menu {
+  display: block;
+  height: 40px;
+  margin: auto;
+  border: none;
+  margin-top: 30px;
+  background: #000000;
+  color: white;
+  width: 100%;
+}
+#contact {
+  border-radius: 100px 10px;
+  border: red solid 5px;
+  margin-right: 30%;
+  margin-bottom: 10%;
+  width: 40%;
+  color: black  ;
+  background: #2897d6;
+  padding: 5rem ;
+}
+#contact .container {
+  max-width: 900px;
+}
+#contact .contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contact .contact-info {
+  width: 50%;
+  margin: 30px 0;
+}
+#contact .contact-info h3 {
+  font-size: 40px;
+  color: #08085e;
+  margin-bottom: 10px;
+}
+#contact .contact-info p {
+  color: #000000;
+  font-weight: 400;
+}
+form {
+  width: 50%;
+}
+form input,
+textarea {
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #ffffff;
+}
+#footer {
+  background-color: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18 px;
+}
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  #menu .menu-items {
+    display: block;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+    }
+
+    header .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p {
+      font-size: 14px;
+    }
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+  
+
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+}
